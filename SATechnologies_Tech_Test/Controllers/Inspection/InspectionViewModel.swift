@@ -27,6 +27,7 @@ class InspectionViewModel{
             if DataManager.shared.inspectionData == nil{
                 do{
                     try await APIManager.shared.request(endPoint: .startInspection)
+                    try? DataManager.shared.saveDataLocally()
                 }catch{
                     print(error)
                 }
@@ -41,12 +42,14 @@ class InspectionViewModel{
     
     
     func saveDataToServer(){
+        try? DataManager.shared.saveDataLocally()
         guard let data = DataManager.shared.inspectionData else {
             message = InspectionStatus.unknownError.rawValue
             return
         }
         
         Task{
+            
             do{
                 try await APIManager.shared.request(endPoint: .submitInspection,userInput: data)
                 
@@ -60,6 +63,7 @@ class InspectionViewModel{
                     case 200:
                         let totalScore = String(describing: "\(self.getTotalScore())")
                         self.message = InspectionStatus.success.rawValue + "\n The total score is \(totalScore)"
+                        
                     case 500:
                         self.message = response.error
                     default:

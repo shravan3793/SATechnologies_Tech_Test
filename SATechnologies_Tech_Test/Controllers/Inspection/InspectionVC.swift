@@ -34,6 +34,7 @@ class InspectionVC: UIViewController {
     }
     
     @IBAction func logout(_ sender: Any) {
+        try? DataManager.shared.saveDataLocally()
         DispatchQueue.main.async {
             let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
             guard let vcLoginNavigation = mainStoryBoard.instantiateInitialViewController()  else{
