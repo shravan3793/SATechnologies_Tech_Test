@@ -70,11 +70,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="Register A New User ?" cornerStyle="capsule"/>
                                                 <connections>
-                                                    <action selector="registerAUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rlD-r1-QKp"/>
-                                                    <segue destination="c4b-Ea-DRw" kind="show" id="fDb-fm-Y69">
-                                                        <segue key="commit" inheritsFrom="parent" id="VEa-XV-96e"/>
-                                                        <segue key="preview" inheritsFrom="commit" id="vrC-kx-ldH"/>
-                                                    </segue>
+                                                    <segue destination="c4b-Ea-DRw" kind="show" id="fDb-fm-Y69"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -219,9 +215,6 @@
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="fDb-fm-Y69"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -1,29 +1,32 @@
-//
-//  InspectionVC.swift
-//  SATechnologies_Tech_Test
-//
-//  Created by Shravan Agrawal on 08/07/24.
-//
-
 import UIKit
-
+import Combine
 class InspectionVC: UIViewController {
+    var cancellables = Set<AnyCancellable>()
 
+    @IBOutlet weak var inspectionTableView: UITableView!
+    let viewModel = InspectionViewModel()
+    var data : InspectionModel?{
+        didSet{
+            DispatchQueue.main.async {
+                self.inspectionTableView.reloadData()
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        initialSetup()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.getNewInspectionsData()
     }
-    */
-
+    
+    func initialSetup(){
+        inspectionTableView.dataSource = self
+        viewModel.$inspectionData.sink { inspectionData
+            in
+            self.data = inspectionData
+        }.store(in: &cancellables)
+    }
 }
