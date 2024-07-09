@@ -4,7 +4,7 @@ class APIManager{
     
     public static let shared = APIManager()
     @Published var responseModel =  ResponseModel(status: 0, error: nil)
-    @Published var responseData  : Any?
+
     func request<T:Encodable>(endPoint:EndPoint,userInput:T = EmptyInput()) async throws{
         let baseURL = "http://localhost:5001"
         guard let url = URL(string: baseURL + endPoint.rawValue) else {

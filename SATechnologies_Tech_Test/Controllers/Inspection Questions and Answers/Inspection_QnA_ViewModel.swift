@@ -1,8 +1,14 @@
-//
-//  Inspection_QnA_ViewModel.swift
-//  SATechnologies_Tech_Test
-//
-//  Created by Shravan Agrawal on 08/07/24.
-//
+import Combine
 
-import Foundation
+class Inspection_QnA_ViewModel{
+    
+    init(){}
+    var cancellables = Set<AnyCancellable>()
+    
+    
+    func updateCategory(category:Category?){
+        DataManager.shared.updateCategoryData(category: category)
+    }
+    
+}
+

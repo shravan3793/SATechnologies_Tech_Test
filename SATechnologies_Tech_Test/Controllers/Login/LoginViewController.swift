@@ -8,9 +8,7 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadInspectionView()
         initialSetup()
-
     }
     
     func initialSetup(){
@@ -45,10 +43,11 @@ class LoginViewController: UIViewController {
     func loadInspectionView(){
         DispatchQueue.main.async {
             let storyboard = UIStoryboard(name: "InspectionStoryboard", bundle: nil)
-            let vcInspection = storyboard.instantiateViewController(withIdentifier: "InspectionVC")
+            let vcInspection = storyboard.instantiateViewController(withIdentifier: "inspectionNavigation")
             vcInspection.modalPresentationStyle = .fullScreen
             self.present(vcInspection, animated: true)
-        }        
+            
+        }
     }
     
     @IBAction func loginUser(_ sender: Any) {

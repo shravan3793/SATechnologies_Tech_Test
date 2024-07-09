@@ -1,29 +1,39 @@
-//
-//  Inspection_QnA+UITableView.swift
-//  SATechnologies_Tech_Test
-//
-//  Created by Shravan Agrawal on 09/07/24.
-//
-
 import UIKit
 
-class Inspection_QnA_UITableView: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+extension Inspection_QnA_VC : UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        arrQuestions.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        arrQuestions[section].name
     }
-    */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        arrQuestions[section].answerChoices.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "answer", for: indexPath)
+        let currentQuestion = arrQuestions[indexPath.section]
+        let arrAnswers = currentQuestion.answerChoices
+        let currentAnswer = arrAnswers[indexPath.row]
+        cell.textLabel?.text = currentAnswer.name
+        let isSelected = currentQuestion.selectedAnswerChoiceId == currentAnswer.id
+        print(isSelected)
+        cell.setSelected(isSelected, animated: true)
+        cell.accessoryType = isSelected ? .checkmark : .none
+        return cell
+    }
 
+}
+
+extension Inspection_QnA_VC : UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let currentQuestion = arrQuestions[indexPath.section]
+        arrQuestions[indexPath.section].selectedAnswerChoiceId = currentQuestion.answerChoices[indexPath.row].id
+        tableView.reloadSections(IndexSet(integer: indexPath.section), with: .fade)
+    }
 }

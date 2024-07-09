@@ -14,7 +14,7 @@ extension APIManager{
             responseModel = ResponseModel(status: statusCode, error: nil)
         }else if endPoint == .startInspection{
             let responseData = try JSONDecoder().decode(Inspection.self, from: data)
-            self.responseData = responseData
+            DataManager.shared.inspectionData = responseData
         }else{
             responseModel = ResponseModel(status: statusCode, error: nil)
         }

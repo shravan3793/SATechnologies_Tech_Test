@@ -7,48 +7,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "06386657-A614-4818-A200-8B31D3A04BFE"
+            uuid = "5A6BC4F6-E4C7-4DEC-BF6F-C8AE47414C48"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SATechnologies_Tech_Test/Controllers/Inspection/InspectionViewModel.swift"
+            filePath = "SATechnologies_Tech_Test/Controllers/Inspection/InspectionVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "getNewInspectionsData()"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "saveDataToServer(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8CD37D47-FFC9-40AA-972D-9C3939D45046"
+            uuid = "13696F4B-2117-43A6-892A-C50C14BCED16"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SATechnologies_Tech_Test/Controllers/Inspection/InspectionViewModel.swift"
+            filePath = "SATechnologies_Tech_Test/Models/DataManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "getNewInspectionsData()"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "saveDataLocally()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B267A8C9-0CA5-4531-BB88-2155E5CC9C68"
+            uuid = "041AE7C3-6AE2-4470-AA4D-0EEF523B6534"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SATechnologies_Tech_Test/Controllers/Inspection/InspectionViewModel.swift"
+            filePath = "SATechnologies_Tech_Test/Models/DataManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "getNewInspectionsData()"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "fetchData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

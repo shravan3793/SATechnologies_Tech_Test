@@ -6,10 +6,14 @@ struct AuthenticationModel:Codable{
     let password: String
 }
 
-// Error Model (also being used to handle overall response)
+// Response Model (also being used to handle Error response)
 struct ResponseModel: Decodable{
     var status: Int?
     var error:String?
+    
+    enum CodingKeys: String, CodingKey {
+        case error
+    }
 }
 
 struct EmptyInput: Encodable {}

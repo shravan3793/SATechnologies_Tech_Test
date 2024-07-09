@@ -14,7 +14,6 @@ enum EndPoint: String{
             return .post
         case .startInspection:
             return .get
-
         }
     }
 }
@@ -28,7 +27,6 @@ enum HttpMethod:String{
 enum APIError : Error{
     case invalidUrl
     case unknownError
-    
 }
 
 

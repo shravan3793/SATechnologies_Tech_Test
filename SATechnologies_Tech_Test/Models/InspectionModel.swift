@@ -1,31 +1,31 @@
 import Foundation
 
 // Inspection Type Model
-struct InspectionType: Codable {
+class InspectionType: Codable {
     let id: Int
     let name: String
     let access: String
 }
 
 // Area Model
-struct Area: Codable {
+class Area: Codable {
     let id: Int
     let name: String
 }
 
 // Answer Choice Model
-struct AnswerChoice: Codable {
+class AnswerChoice: Codable {
     let id: Int
     let name: String
     let score: Double
 }
 
 // Question Model
-struct Question: Codable {
+class Question: Codable {
     let id: Int
     let name: String
     let answerChoices: [AnswerChoice]
-    let selectedAnswerChoiceId: Int?
+    var selectedAnswerChoiceId: Int?
     var isExpanded : Bool = true
     enum CodingKeys: String, CodingKey {
             case id
@@ -36,7 +36,7 @@ struct Question: Codable {
 }
 
 // Category Model
-struct Category: Codable {
+class Category: Codable {
     let id: Int
     let name: String
     var questions: [Question]
@@ -49,18 +49,18 @@ struct Category: Codable {
 }
 
 // Survey Model
-struct Survey: Codable {
+class Survey: Codable {
     let id: Int
     var categories: [Category]
 }
 
 // Inspection  Model
-struct Inspection: Codable {
+class Inspection: Codable {
     let inspection: InspectionModel    
 }
 
 
-struct InspectionModel:Codable{
+class InspectionModel:Codable{
     let id: Int
     let inspectionType: InspectionType
     let area: Area
