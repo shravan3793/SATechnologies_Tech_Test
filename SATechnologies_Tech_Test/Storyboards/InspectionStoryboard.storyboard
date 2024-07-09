@@ -90,6 +90,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MHT-lk-I57">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="5YZ-28-Txg">
+                            <connections>
+                                <action selector="logout:" destination="9CT-KU-Ydl" id="gPj-eJ-J4u"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save Online" id="t4S-QE-Kgg">
                             <connections>
                                 <action selector="saveDataToServer:" destination="9CT-KU-Ydl" id="ZTI-Pz-Ufr"/>
