@@ -21,7 +21,6 @@ extension Inspection_QnA_VC : UITableViewDataSource {
         let currentAnswer = arrAnswers[indexPath.row]
         cell.textLabel?.text = currentAnswer.name
         let isSelected = currentQuestion.selectedAnswerChoiceId == currentAnswer.id
-        print(isSelected)
         cell.setSelected(isSelected, animated: true)
         cell.accessoryType = isSelected ? .checkmark : .none
         return cell

@@ -13,33 +13,34 @@ class DataManager{
         }
         
         let fileURL = documentDirectory.appendingPathComponent("inspectionData")
-        print(fileURL)
         return fileURL
     }
     
     func saveDataLocally()  throws{
-     
         do{
             guard let inspectionData = inspectionData else {
                 return
             }
             let data = try JSONEncoder().encode(inspectionData)
             try data.write(to: getFileURL())
-            print("InspectionModel saved successfully.")
-        }catch{
-            throw error
-        }
-    
-    }
-    
-    func fetchData() throws{
-        do{
-            let data = try Data(contentsOf: getFileURL())
-            inspectionData = try JSONDecoder().decode(Inspection.self, from: data)
         }catch{
             throw error
         }
         
+    }
+    
+    func fetchData() throws{
+        do {
+            let fileURL = try getFileURL()
+            if FileManager.default.fileExists(atPath: fileURL.path) {
+                let data = try Data(contentsOf: fileURL)
+                inspectionData = try JSONDecoder().decode(Inspection.self, from: data)
+            } else {
+                inspectionData = nil
+            }
+        } catch {
+            throw error
+        }
     }
     
     func updateCategoryData(category:Category?){

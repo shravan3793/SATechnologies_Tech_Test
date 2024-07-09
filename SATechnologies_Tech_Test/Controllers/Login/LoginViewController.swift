@@ -13,22 +13,12 @@ class LoginViewController: UIViewController {
     
     func initialSetup(){
         passwordField.isSecureTextEntry = true
-        viewModel.$isAuthenticationSuccess
-            .sink { completion in
-                switch completion {
-                case .finished:
-                    print("Authentication process finished.")
-                case .failure(let error):
-                    print("Received error: \(error)")
-                }
-            } receiveValue: { isSuccess in
-                if isSuccess {
-                    self.loadInspectionView()
-                } else {
-                    print("Authentication failed.")
-                }
+       
+        viewModel.$isAuthenticationSuccess.sink(receiveValue: { isSuccess in
+            if isSuccess {
+                self.loadInspectionView()
             }
-            .store(in: &viewModel.cancellables)
+        }).store(in: &viewModel.cancellables)
 
         viewModel.$statusMessage.sink(receiveValue: { message in
             if !message.isEmpty{

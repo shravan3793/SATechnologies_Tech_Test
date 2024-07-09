@@ -20,7 +20,9 @@ class InspectionViewModel{
             do {
                 try DataManager.shared.fetchData()
             }catch
-            {print(error)}
+            {
+                print(error)
+            }
             
             if DataManager.shared.inspectionData == nil{
                 do{
@@ -56,7 +58,8 @@ class InspectionViewModel{
                     
                     switch status{
                     case 200:
-                        self.message = InspectionStatus.success.rawValue
+                        let totalScore = String(describing: "\(self.getTotalScore())")
+                        self.message = InspectionStatus.success.rawValue + "\n The total score is \(totalScore)"
                     case 500:
                         self.message = response.error
                     default:
@@ -73,27 +76,27 @@ class InspectionViewModel{
 }
 
 // total score calulcation
-extension InspectionViewModel{
-    func getTotalScore(){
-        guard let categories = DataManager.shared.inspectionData?.inspection.survey.categories
-        else {
-            return
+extension InspectionViewModel {
+    func getTotalScore() -> Double {
+        guard let categories = DataManager.shared.inspectionData?.inspection.survey.categories else {
+            return 0
         }
         
-        let data = categories.map({ category in
-            return category.questions.map { question in
-                guard let answer = question.answerChoices.first(where:{ answer in
+        let data = categories.map { category in
+            category.questions.map { question in
+                guard let answer = question.answerChoices.first(where: { answer in
                     answer.id == question.selectedAnswerChoiceId
                 }) else {
                     return 0.0
                 }
                 return answer.score
             }
-        })
+        }
         
-        let sum = data.reduce(0, { partialResult, arrAnswerScores in
-            let result = arrAnswerScores.reduce(0.0, +)
-            return result
-        })
+        let sum = data.reduce(0.0) { partialResult, arrAnswerScores in
+            partialResult + arrAnswerScores.reduce(0.0, +)
+        }
+        return sum
     }
 }
+

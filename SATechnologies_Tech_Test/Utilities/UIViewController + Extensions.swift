@@ -8,10 +8,3 @@ extension UIViewController{
         self.present(alertController, animated: true)
     }
 }
-
-enum AlertMessages : String{
-    case validEmail = "Please Enter Valid email"
-    case validPassword = "Please Enter Valid Password"
-    case confirmPassword = "Please confirm password"
-    case registrationSuccess = "Registration Successful"
-}

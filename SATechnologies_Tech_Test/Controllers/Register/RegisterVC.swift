@@ -9,21 +9,26 @@ class RegisterVC: UIViewController {
     var cancellables = Set<AnyCancellable>()
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.$statusMessage.sink(receiveValue: { message in
-            if message != RegistrationStatus.unknownError.rawValue{
-                DispatchQueue.main.async {
-                    self.showAlertView(message: message)
-                }
-            }
-        }).store(in: &cancellables)
+       initialSetup()
     }
+    
     
     @IBAction func registerUser(_ sender: Any) {
         viewModel.registerUser(user: AuthenticationModel(email: usernameField.text ?? "",
                                                          password: passwordField.text ?? ""))
     }
     
-    func validations(){
-        
+    func initialSetup(){
+        self.title = "Register"
+        self.passwordField.isSecureTextEntry = true
+        viewModel.$statusMessage.sink(receiveValue: { message in
+            if !message.isEmpty{
+                DispatchQueue.main.async {
+                    self.showAlertView(message: message)
+                    self.usernameField.text = nil
+                    self.passwordField.text = nil
+                }
+            }
+        }).store(in: &cancellables)
     }
 }
