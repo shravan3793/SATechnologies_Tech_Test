@@ -54,15 +54,16 @@ class InspectionVC: UIViewController {
         
     }
     
-//    @IBAction func saveDataToServer(_ sender: Any) {
-//        viewModel.$message.sink { message in
-//            if let message{
-//                DispatchQueue.main.async {
-//                    self.showAlertView(message: message)
-//                }
-//                
-//            }
-//        }.store(in: &cancellables)
-//    }
+    @IBAction func getTotalScore(_ sender: Any) {
+        viewModel.calculateTheTotalScore()
+        viewModel.$message.sink { message in
+            if let message{
+                DispatchQueue.main.async {
+                    self.showAlertView(message: message)
+                }
+                
+            }
+        }.store(in: &cancellables)
+    }
 }
 

@@ -42,6 +42,13 @@ class InspectionViewModel{
 
 // total score calulcation
 extension InspectionViewModel {
+    
+    func calculateTheTotalScore(){
+        
+        let score =  getTotalScore()
+        message = "The total score is \(String(describing: score))"
+    }
+    
     func getTotalScore() -> Double {
         guard let categories = DataManager.shared.inspectionData?.inspection.survey.categories else {
             return 0
