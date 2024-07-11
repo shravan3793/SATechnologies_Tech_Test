@@ -10,7 +10,7 @@ enum LoginStatus: String{
 }
 
 
-class LoginViewModel{
+class LoginViewModel : ObservableObject{
     
     @Published var isAuthenticationSuccess = false
     
@@ -22,7 +22,9 @@ class LoginViewModel{
         Task{
             do {
                 try await APIManager.shared.request(endPoint: .login, userInput: user)
-                APIManager.shared.$responseModel.sink { response in
+                APIManager.shared.$responseModel
+                    .receive(on: DispatchQueue.main)
+                    .sink { response in
                     guard let status = response.status else {return}
                     switch status{
                     case 200:

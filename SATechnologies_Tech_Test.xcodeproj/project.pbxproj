@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		9D21E40C2C3D113E008077B8 /* Inspection_QnA+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21E40B2C3D113E008077B8 /* Inspection_QnA+UITableView.swift */; };
 		9D21E40E2C3D17C5008077B8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21E40D2C3D17C5008077B8 /* DataManager.swift */; };
+		9D31C8642C3F8DF4001D3AC2 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31C8632C3F8DF4001D3AC2 /* RegisterView.swift */; };
 		9D35C0DF2C3BC468000D1587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35C0DE2C3BC468000D1587 /* AppDelegate.swift */; };
 		9D35C0E12C3BC468000D1587 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35C0E02C3BC468000D1587 /* SceneDelegate.swift */; };
-		9D35C0E32C3BC468000D1587 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35C0E22C3BC468000D1587 /* LoginViewController.swift */; };
 		9D35C0E62C3BC468000D1587 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9D35C0E52C3BC468000D1587 /* Base */; };
 		9D35C0E82C3BC469000D1587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D35C0E72C3BC469000D1587 /* Assets.xcassets */; };
 		9D35C0EB2C3BC469000D1587 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9D35C0EA2C3BC469000D1587 /* Base */; };
-		9D35C0F52C3BCA07000D1587 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35C0F42C3BCA07000D1587 /* RegisterVC.swift */; };
 		9D35C0F72C3BCB29000D1587 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35C0F62C3BCB29000D1587 /* APIManager.swift */; };
 		9D35C0F92C3BCCEC000D1587 /* APIManager + EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35C0F82C3BCCEC000D1587 /* APIManager + EndPoints.swift */; };
 		9D35C0FC2C3BCD41000D1587 /* InspectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35C0FB2C3BCD41000D1587 /* InspectionModel.swift */; };
@@ -28,6 +27,9 @@
 		9D35C10E2C3BE44B000D1587 /* InspectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35C10D2C3BE44B000D1587 /* InspectionViewModel.swift */; };
 		9D35C1102C3C01A1000D1587 /* APIManager + Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35C10F2C3C01A1000D1587 /* APIManager + Parser.swift */; };
 		9D35C1152C3C0AD2000D1587 /* InspectionVC+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35C1142C3C0AD2000D1587 /* InspectionVC+UITableViewDataSource.swift */; };
+		9DBF3D982C3E94470047615D /* SATechnologiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBF3D972C3E94470047615D /* SATechnologiesApp.swift */; };
+		9DBF3D9B2C3E9DC50047615D /* InspectionViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBF3D9A2C3E9DC50047615D /* InspectionViewRepresentable.swift */; };
+		9DBF3D9D2C3EA0000047615D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBF3D9C2C3EA0000047615D /* LoginView.swift */; };
 		9DD43CD12C3C37DF0057D0E0 /* Inspection_QnA_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD43CD02C3C37DF0057D0E0 /* Inspection_QnA_VC.swift */; };
 		9DD43CD32C3C37F30057D0E0 /* Inspection_QnA_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD43CD22C3C37F30057D0E0 /* Inspection_QnA_ViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -35,15 +37,14 @@
 /* Begin PBXFileReference section */
 		9D21E40B2C3D113E008077B8 /* Inspection_QnA+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Inspection_QnA+UITableView.swift"; sourceTree = "<group>"; };
 		9D21E40D2C3D17C5008077B8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		9D31C8632C3F8DF4001D3AC2 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		9D35C0DB2C3BC468000D1587 /* SATechnologies_Tech_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SATechnologies_Tech_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D35C0DE2C3BC468000D1587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D35C0E02C3BC468000D1587 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9D35C0E22C3BC468000D1587 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9D35C0E52C3BC468000D1587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D35C0E72C3BC469000D1587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D35C0EA2C3BC469000D1587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D35C0EC2C3BC469000D1587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D35C0F42C3BCA07000D1587 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		9D35C0F62C3BCB29000D1587 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		9D35C0F82C3BCCEC000D1587 /* APIManager + EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIManager + EndPoints.swift"; sourceTree = "<group>"; };
 		9D35C0FB2C3BCD41000D1587 /* InspectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionModel.swift; sourceTree = "<group>"; };
@@ -56,6 +57,9 @@
 		9D35C10D2C3BE44B000D1587 /* InspectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionViewModel.swift; sourceTree = "<group>"; };
 		9D35C10F2C3C01A1000D1587 /* APIManager + Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIManager + Parser.swift"; sourceTree = "<group>"; };
 		9D35C1142C3C0AD2000D1587 /* InspectionVC+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InspectionVC+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		9DBF3D972C3E94470047615D /* SATechnologiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATechnologiesApp.swift; sourceTree = "<group>"; };
+		9DBF3D9A2C3E9DC50047615D /* InspectionViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionViewRepresentable.swift; sourceTree = "<group>"; };
+		9DBF3D9C2C3EA0000047615D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9DD43CD02C3C37DF0057D0E0 /* Inspection_QnA_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspection_QnA_VC.swift; sourceTree = "<group>"; };
 		9DD43CD22C3C37F30057D0E0 /* Inspection_QnA_ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspection_QnA_ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +94,8 @@
 		9D35C0DD2C3BC468000D1587 /* SATechnologies_Tech_Test */ = {
 			isa = PBXGroup;
 			children = (
+				9DBF3D972C3E94470047615D /* SATechnologiesApp.swift */,
+				9DBF3D962C3E94180047615D /* Swift UI ViewRepresentable */,
 				9D35C0F32C3BC4A3000D1587 /* App and Scene Delegates */,
 				9D35C0F22C3BC491000D1587 /* Controllers */,
 				9D35C1092C3BE3C1000D1587 /* Storyboards */,
@@ -126,7 +132,7 @@
 		9D35C1032C3BD96E000D1587 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				9D35C0E22C3BC468000D1587 /* LoginViewController.swift */,
+				9DBF3D9C2C3EA0000047615D /* LoginView.swift */,
 				9D35C0FF2C3BCF91000D1587 /* LoginViewModel.swift */,
 			);
 			path = Login;
@@ -135,8 +141,8 @@
 		9D35C1042C3BD97B000D1587 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				9D35C0F42C3BCA07000D1587 /* RegisterVC.swift */,
 				9D35C1052C3BD98A000D1587 /* RegisterViewModel.swift */,
+				9D31C8632C3F8DF4001D3AC2 /* RegisterView.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -186,6 +192,14 @@
 				9D35C1012C3BD0DB000D1587 /* UIViewController + Extensions.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9DBF3D962C3E94180047615D /* Swift UI ViewRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				9DBF3D9A2C3E9DC50047615D /* InspectionViewRepresentable.swift */,
+			);
+			path = "Swift UI ViewRepresentable";
 			sourceTree = "<group>";
 		};
 		9DD43CCF2C3C2F300057D0E0 /* Inspection Questions and Answers */ = {
@@ -270,13 +284,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D35C0E32C3BC468000D1587 /* LoginViewController.swift in Sources */,
-				9D35C0F52C3BCA07000D1587 /* RegisterVC.swift in Sources */,
+				9DBF3D9B2C3E9DC50047615D /* InspectionViewRepresentable.swift in Sources */,
 				9D35C0FC2C3BCD41000D1587 /* InspectionModel.swift in Sources */,
 				9D35C10E2C3BE44B000D1587 /* InspectionViewModel.swift in Sources */,
 				9D35C0F72C3BCB29000D1587 /* APIManager.swift in Sources */,
 				9DD43CD12C3C37DF0057D0E0 /* Inspection_QnA_VC.swift in Sources */,
 				9D35C1062C3BD98A000D1587 /* RegisterViewModel.swift in Sources */,
+				9DBF3D9D2C3EA0000047615D /* LoginView.swift in Sources */,
+				9D31C8642C3F8DF4001D3AC2 /* RegisterView.swift in Sources */,
 				9D35C0DF2C3BC468000D1587 /* AppDelegate.swift in Sources */,
 				9D35C1102C3C01A1000D1587 /* APIManager + Parser.swift in Sources */,
 				9D35C10C2C3BE432000D1587 /* InspectionVC.swift in Sources */,
@@ -289,6 +304,7 @@
 				9D35C1152C3C0AD2000D1587 /* InspectionVC+UITableViewDataSource.swift in Sources */,
 				9D35C1022C3BD0DB000D1587 /* UIViewController + Extensions.swift in Sources */,
 				9D35C1002C3BCF91000D1587 /* LoginViewModel.swift in Sources */,
+				9DBF3D982C3E94470047615D /* SATechnologiesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +460,6 @@
 				INFOPLIST_FILE = SATechnologies_Tech_Test/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -476,7 +491,6 @@
 				INFOPLIST_FILE = SATechnologies_Tech_Test/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

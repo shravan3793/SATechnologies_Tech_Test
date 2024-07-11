@@ -4,7 +4,6 @@ enum InspectionStatus : String{
     case success = "Submitted Successfully"
     case anErrorOccured = "There was an error (such as the inspection not having an id)"
     case unknownError
-
 }
 
 class InspectionViewModel{
@@ -19,8 +18,7 @@ class InspectionViewModel{
             
             do {
                 try DataManager.shared.fetchData()
-            }catch
-            {
+            }catch{
                 print(error)
             }
             

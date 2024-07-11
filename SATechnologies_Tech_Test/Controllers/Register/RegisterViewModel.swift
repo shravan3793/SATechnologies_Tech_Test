@@ -7,9 +7,10 @@ enum RegistrationStatus : String{
     case unknownError = "Unknown Error"
 }
 
-class RegisterViewModel{
+class RegisterViewModel:ObservableObject{
  
-    @Published var statusMessage = String()
+    @Published var isSuccess = false
+    var statusMessage = String()
     var cancellables = Set<AnyCancellable>()
 
     
@@ -25,6 +26,7 @@ class RegisterViewModel{
                     switch status{
                     case 200:
                         self.statusMessage = RegistrationStatus.success.rawValue
+                        self.isSuccess = true
                     case 400:
                         self.statusMessage = response.error ?? RegistrationStatus.unSuccessful.rawValue
                     case 401:
@@ -36,8 +38,6 @@ class RegisterViewModel{
             }catch{
                 print(error)
             }
-            
         }
-        
     }
 }
