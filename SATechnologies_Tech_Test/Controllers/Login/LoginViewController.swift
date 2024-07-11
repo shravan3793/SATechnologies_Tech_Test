@@ -33,7 +33,7 @@ class LoginViewController: UIViewController {
     func loadInspectionView(){
         DispatchQueue.main.async {
             let storyboard = UIStoryboard(name: "InspectionStoryboard", bundle: nil)
-            let vcInspection = storyboard.instantiateViewController(withIdentifier: "inspectionNavigation")
+            let vcInspection = storyboard.instantiateViewController(withIdentifier: "tabBar")
             vcInspection.modalPresentationStyle = .fullScreen
             self.present(vcInspection, animated: true)
             
