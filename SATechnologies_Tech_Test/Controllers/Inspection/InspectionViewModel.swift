@@ -38,45 +38,6 @@ class InspectionViewModel{
             }.store(in: &cancellables)
         }
     }
-    
-    
-    
-    func saveDataToServer(){
-        try? DataManager.shared.saveDataLocally()
-        guard let data = DataManager.shared.inspectionData else {
-            message = InspectionStatus.unknownError.rawValue
-            return
-        }
-        
-        Task{
-            
-            do{
-                try await APIManager.shared.request(endPoint: .submitInspection,userInput: data)
-                
-                APIManager.shared.$responseModel.sink { response in
-                    guard let status =  response.status else{
-                        self.message = InspectionStatus.unknownError.rawValue
-                        return
-                    }
-                    
-                    switch status{
-                    case 200:
-                        let totalScore = String(describing: "\(self.getTotalScore())")
-                        self.message = InspectionStatus.success.rawValue + "\n The total score is \(totalScore)"
-                        
-                    case 500:
-                        self.message = response.error
-                    default:
-                        self.message = InspectionStatus.unknownError.rawValue
-                    }
-                }.store(in: &cancellables)
-                
-            }catch{
-                print(error)
-            }
-           
-        }
-    }
 }
 
 // total score calulcation

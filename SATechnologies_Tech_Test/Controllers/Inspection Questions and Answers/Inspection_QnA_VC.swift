@@ -37,4 +37,17 @@ class Inspection_QnA_VC: UIViewController {
             self.title = self.category?.name
         }
     }
+    
+    
+    @IBAction func saveDataToServer(_ sender: Any) {
+        inspectionQnAViewModel.saveDataToServer()
+        inspectionQnAViewModel.$message.sink { message in
+            if let message{
+                DispatchQueue.main.async {
+                    self.showAlertView(message: message)
+                }
+                
+            }
+        }.store(in: &cancellables)
+    }
 }
