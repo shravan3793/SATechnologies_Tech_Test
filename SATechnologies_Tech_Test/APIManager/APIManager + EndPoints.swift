@@ -5,14 +5,15 @@ enum EndPoint: String{
     case login = "/api/login"
     case startInspection = "/api/inspections/start"
     case submitInspection = "/api/inspections/submit"
-    
+    case randomInspection = "/api/random_inspection"
     func getHTTPMethod() -> HttpMethod{
         switch self{
         case .register,
                 .login,
                 .submitInspection:
             return .post
-        case .startInspection:
+        case .startInspection,
+                .randomInspection:
             return .get
         }
     }

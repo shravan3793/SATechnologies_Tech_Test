@@ -28,7 +28,7 @@ class InspectionVC: UIViewController {
                 guard let inspectionArea = self.data?.area.name else{
                     return
                 }
-                self.title =  "\(inspectionArea.uppercased())"
+                self.navigationItem.title =  "\(inspectionArea.uppercased())"
             }
         }.store(in: &cancellables)
     }
