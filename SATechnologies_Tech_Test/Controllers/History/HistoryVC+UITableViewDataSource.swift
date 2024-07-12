@@ -17,7 +17,8 @@ extension HistoryVC:UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        categories?[section].name
+        let str : String? = "Category: " + (categories?[section].name ?? "")
+        return str
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

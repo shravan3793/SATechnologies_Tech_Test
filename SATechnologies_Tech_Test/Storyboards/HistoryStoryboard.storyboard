@@ -17,8 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ss5-Ue-f8P">
+                                <rect key="frame" x="20" y="113.00000000000001" width="353" height="50.666666666666671"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAY-bY-7HH">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7v0-xZ-Xbj">
+                                        <rect key="frame" x="0.0" y="30.333333333333343" width="353" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Pzk-Ot-FxE">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="173.66666666666669" width="393" height="595.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="questionCell" id="7Af-h3-umk" customClass="QuestionTableViewCell" customModule="SATechnologies_Tech_Test" customModuleProvider="target">
@@ -44,15 +61,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="VSB-Bm-BF1" firstAttribute="trailing" secondItem="Pzk-Ot-FxE" secondAttribute="trailing" id="7vs-yo-ex8"/>
+                            <constraint firstItem="Pzk-Ot-FxE" firstAttribute="top" secondItem="Ss5-Ue-f8P" secondAttribute="bottom" constant="10" id="8iF-wT-cxV"/>
                             <constraint firstItem="VSB-Bm-BF1" firstAttribute="bottom" secondItem="Pzk-Ot-FxE" secondAttribute="bottom" id="EBh-2l-Dw7"/>
+                            <constraint firstItem="Ss5-Ue-f8P" firstAttribute="top" secondItem="VSB-Bm-BF1" secondAttribute="top" constant="10" id="FIg-Q1-WVA"/>
+                            <constraint firstItem="Ss5-Ue-f8P" firstAttribute="leading" secondItem="VSB-Bm-BF1" secondAttribute="leading" constant="20" id="iDZ-X5-urk"/>
                             <constraint firstItem="Pzk-Ot-FxE" firstAttribute="leading" secondItem="VSB-Bm-BF1" secondAttribute="leading" id="leq-JL-h1w"/>
-                            <constraint firstItem="Pzk-Ot-FxE" firstAttribute="top" secondItem="VSB-Bm-BF1" secondAttribute="top" id="xA9-UG-lXY"/>
+                            <constraint firstItem="VSB-Bm-BF1" firstAttribute="trailing" secondItem="Ss5-Ue-f8P" secondAttribute="trailing" constant="20" id="u17-BD-nzg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Lpr-fe-sSl"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="historyTableView" destination="Pzk-Ot-FxE" id="N9y-Eb-mUY"/>
+                        <outlet property="inspectionArea" destination="nAY-bY-7HH" id="7ct-fv-ACJ"/>
+                        <outlet property="inspectionType" destination="7v0-xZ-Xbj" id="fDe-Fa-Off"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-Hc-jNO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
