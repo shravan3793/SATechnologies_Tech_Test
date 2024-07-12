@@ -21,7 +21,7 @@ class RegisterVC: UIViewController {
     func initialSetup(){
         self.title = "Register"
         self.passwordField.isSecureTextEntry = true
-        viewModel.$statusMessage.sink(receiveValue: { message in
+        viewModel.$statusMessageRegistration.sink(receiveValue: { message in
             if !message.isEmpty{
                 DispatchQueue.main.async {
                     self.showAlertView(message: message)
