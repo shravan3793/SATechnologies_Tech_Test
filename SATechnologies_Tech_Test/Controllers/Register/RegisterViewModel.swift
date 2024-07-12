@@ -21,14 +21,14 @@ class RegisterViewModel{
             do {
                 try await APIManager.shared.request(endPoint: .register, userInput: user)
                 APIManager.shared.$responseModel.sink { response in
-                    guard let status = response.status else {return}
+                    guard let status = response?.status else {return}
                     switch status{
                     case 200:
                         self.statusMessageRegistration = RegistrationStatus.success.rawValue
                     case 400:
-                        self.statusMessageRegistration = response.error ?? RegistrationStatus.unSuccessful.rawValue
+                        self.statusMessageRegistration = response?.error ?? RegistrationStatus.unSuccessful.rawValue
                     case 401:
-                        self.statusMessageRegistration = response.error ??  RegistrationStatus.userExists.rawValue
+                        self.statusMessageRegistration = response?.error ??  RegistrationStatus.userExists.rawValue
                     default:
                         self.statusMessageRegistration = RegistrationStatus.unknownError.rawValue
                     }

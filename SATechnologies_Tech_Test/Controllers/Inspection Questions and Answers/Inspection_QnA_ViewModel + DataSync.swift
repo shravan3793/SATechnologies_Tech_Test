@@ -13,7 +13,7 @@ extension Inspection_QnA_ViewModel{
                 try await APIManager.shared.request(endPoint: .submitInspection,userInput: data)
                 
                 APIManager.shared.$responseModel.sink { response in
-                    guard let status =  response.status else{
+                    guard let status =  response?.status else{
                         self.message = InspectionStatus.unknownError.rawValue
                         return
                     }
@@ -22,7 +22,7 @@ extension Inspection_QnA_ViewModel{
                     case 200:
                         self.message = InspectionStatus.success.rawValue
                     case 500:
-                        self.message = response.error
+                        self.message = response?.error
                     default:
                         self.message = InspectionStatus.unknownError.rawValue
                     }

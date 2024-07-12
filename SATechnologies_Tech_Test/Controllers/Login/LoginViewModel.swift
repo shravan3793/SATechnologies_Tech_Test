@@ -23,14 +23,14 @@ class LoginViewModel{
             do {
                 try await APIManager.shared.request(endPoint: .login, userInput: user)
                 APIManager.shared.$responseModel.sink { response in
-                    guard let status = response.status else {return}
+                    guard let status = response?.status else {return}
                     switch status{
                     case 200:
                         self.isAuthenticationSuccess = true
                     case 400:
-                        self.statusMessage = response.error ?? LoginStatus.missingFields.rawValue
+                        self.statusMessage = response?.error ?? LoginStatus.missingFields.rawValue
                     case 401:
-                        self.statusMessage = response.error ?? LoginStatus.invalidCrendetials.rawValue
+                        self.statusMessage = response?.error ?? LoginStatus.invalidCrendetials.rawValue
                     default:
                         self.statusMessage = LoginStatus.unknownError.rawValue
                     }
