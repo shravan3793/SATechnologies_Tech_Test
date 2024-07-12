@@ -9,6 +9,11 @@ class HistoryVC: UIViewController {
         initialSetup()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        historyViewModel.getInspectionDataHistory()
+    }
+    
     func initialSetup(){
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.title = "History"
@@ -19,7 +24,7 @@ class HistoryVC: UIViewController {
         historyTableView.rowHeight = UITableView.automaticDimension
         historyTableView.estimatedRowHeight = 44.0
 
-        historyViewModel.getInspectionDataHistory()
+        
         historyViewModel.$inspectionData.sink { inspectionData in
             guard inspectionData != nil else{return}
                 DispatchQueue.main.async {
@@ -27,5 +32,4 @@ class HistoryVC: UIViewController {
                 }
         }.store(in: &cancellables)
     }
-    
 }

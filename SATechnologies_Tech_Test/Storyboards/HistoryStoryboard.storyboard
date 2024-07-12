@@ -12,7 +12,6 @@
         <!--HistoryVC-->
         <scene sceneID="sqk-U5-g7Z">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-Hc-jNO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="kkA-v5-MCA" customClass="HistoryVC" customModule="SATechnologies_Tech_Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eAm-Q0-A5A">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -56,6 +55,7 @@
                         <outlet property="historyTableView" destination="Pzk-Ot-FxE" id="N9y-Eb-mUY"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nRH-Hc-jNO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1014.5038167938931" y="65.492957746478879"/>
         </scene>
