@@ -1,4 +1,3 @@
-
 import XCTest
 import Combine
 
@@ -53,5 +52,11 @@ final class LoginViewModelTests: XCTestCase {
         XCTAssertTrue(viewModel.isAuthenticationSuccess)
     }
     
-
+    func testLogin_InvalidCredentails(){
+        let user = AuthenticationModel(email: "test@example.com", password: "wrongPassword")
+        mockAPIManager.mockResponseModel = ResponseModel(status: 401, error: "Invalid user or password")
+        viewModel.callLoginApi(user: user)
+        
+        XCTAssertEqual(viewModel.statusMessage, "")
+    }
 }

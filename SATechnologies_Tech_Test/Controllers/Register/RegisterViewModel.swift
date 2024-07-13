@@ -11,7 +11,7 @@ class RegisterViewModel{
  
     @Published var statusMessageRegistration = String()
     var cancellables = Set<AnyCancellable>()
-
+    @Published var isRegistered = false
     
     init() {
     }
@@ -24,6 +24,7 @@ class RegisterViewModel{
                     guard let status = response?.status else {return}
                     switch status{
                     case 200:
+                        self.isRegistered = true
                         self.statusMessageRegistration = RegistrationStatus.success.rawValue
                     case 400:
                         self.statusMessageRegistration = response?.error ?? RegistrationStatus.unSuccessful.rawValue

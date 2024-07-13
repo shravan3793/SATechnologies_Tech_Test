@@ -34,67 +34,69 @@
             endingLineNumber = "34"
             landmarkName = "loadInspectionView()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E25B3125-4162-46E6-BF47-32C3FD3FFF1F - 4fbc3fb6f3bdb0e2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SATechnologies_Tech_Test.LoginViewController.loadInspectionView() -&gt; ()"
-                  moduleName = "SATechnologies_Tech_Test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Data%20Drive/iOS%20Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Login/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34">
-               </Location>
-               <Location
-                  uuid = "E25B3125-4162-46E6-BF47-32C3FD3FFF1F - da8ad7032fb7d986"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in SATechnologies_Tech_Test.LoginViewController.loadInspectionView() -&gt; ()"
-                  moduleName = "SATechnologies_Tech_Test"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Data%20Drive/iOS%20Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Login/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "89B0E82A-0A75-40D8-A5A7-CB8946D57ED0"
-            shouldBeEnabled = "Yes"
+            uuid = "09A7F59B-DA2F-45B4-BA45-5A991112B3E9"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SATechnologies_Tech_Test/Controllers/Login/LoginViewController.swift"
+            filePath = "SATechnologies_Tech_Test/Controllers/Login/Tests/LoginViewModelTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "initialSetup()"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "testLogin_InvalidCredentails()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D3C3B09A-ECBB-48D1-8E55-762E669585AF"
+            uuid = "0A6C7A03-45CF-432F-8411-05D2BEE59A59"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SATechnologies_Tech_Test/Controllers/Login/LoginViewController.swift"
+            filePath = "SATechnologies_Tech_Test/Controllers/Register/Tests/RegisterViewModelTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "initialSetup()"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "testRegistrationSuccess()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9167F231-F04D-4C74-8259-597C8A0788FC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SATechnologies_Tech_Test/Controllers/Register/RegisterViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "registerUser(user:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD09E371-3E91-4043-80A0-1E7CF0433313"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SATechnologies_Tech_Test/APIManager/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "request(endPoint:userInput:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
