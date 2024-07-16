@@ -12,7 +12,7 @@ extension Inspection_QnA_ViewModel{
             do{
                 try await APIManager.shared.request(endPoint: .submitInspection,userInput: data)
                 
-                APIManager.shared.$responseModel.sink { response in
+                APIManager.shared.responseModel.sink { response in
                     guard let status =  response?.status else{
                         self.message = InspectionStatus.unknownError.rawValue
                         return

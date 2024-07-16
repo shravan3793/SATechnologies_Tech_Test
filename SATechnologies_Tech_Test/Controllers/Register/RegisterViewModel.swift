@@ -8,37 +8,44 @@ enum RegistrationStatus : String{
 }
 
 class RegisterViewModel{
- 
-    @Published var statusMessageRegistration = String()
-    var cancellables = Set<AnyCancellable>()
-    @Published var isRegistered = false
     
-    init() {
+    var statusMessageRegistration = PassthroughSubject<String, Never>()
+    private var cancellables = Set<AnyCancellable>()
+    var isRegistered = PassthroughSubject<Bool, Never>()
+    
+    init(){
+        setupBindings()
+    }
+    
+    private func setupBindings(){
+        APIManager.shared.responseModel.sink { [weak self] response in
+            guard let response else {return}
+            self?.handleResponseModel(response)
+        }.store(in: &cancellables)
+    }
+    
+    private func handleResponseModel(_ response:ResponseModel){
+        guard let status = response.status else {return}
+        switch status{
+        case 200:
+            self.isRegistered.send(true)
+            self.statusMessageRegistration.send(RegistrationStatus.success.rawValue)
+        case 400:
+            self.statusMessageRegistration.send(response.error ?? RegistrationStatus.unSuccessful.rawValue)
+        case 401:
+            self.statusMessageRegistration.send(response.error ??  RegistrationStatus.userExists.rawValue)
+        default:
+            self.statusMessageRegistration.send(RegistrationStatus.unknownError.rawValue)
+        }
     }
     
     func registerUser(user:AuthenticationModel){
         Task{
             do {
                 try await APIManager.shared.request(endPoint: .register, userInput: user)
-                APIManager.shared.$responseModel.sink { response in
-                    guard let status = response?.status else {return}
-                    switch status{
-                    case 200:
-                        self.isRegistered = true
-                        self.statusMessageRegistration = RegistrationStatus.success.rawValue
-                    case 400:
-                        self.statusMessageRegistration = response?.error ?? RegistrationStatus.unSuccessful.rawValue
-                    case 401:
-                        self.statusMessageRegistration = response?.error ??  RegistrationStatus.userExists.rawValue
-                    default:
-                        self.statusMessageRegistration = RegistrationStatus.unknownError.rawValue
-                    }
-                }.store(in: &cancellables)
             }catch{
-                print(error)
+                self.statusMessageRegistration.send(RegistrationStatus.unknownError.rawValue)
             }
-            
         }
-        
     }
 }

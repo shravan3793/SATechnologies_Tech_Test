@@ -2,33 +2,40 @@ import UIKit
 import Combine
 class RegisterVC: UIViewController {
     
-    @IBOutlet weak var usernameField: UITextField!
-    @IBOutlet weak var confirmPasswordField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
-    let viewModel = RegisterViewModel()
-    var cancellables = Set<AnyCancellable>()
+    @IBOutlet private weak var usernameField: UITextField!
+    @IBOutlet private weak var confirmPasswordField: UITextField!
+    @IBOutlet private weak var passwordField: UITextField!
+    private let viewModel = RegisterViewModel()
+    private var cancellables = Set<AnyCancellable>()
     override func viewDidLoad() {
         super.viewDidLoad()
-       initialSetup()
+        initialSetup()
     }
     
-    
-    @IBAction func registerUser(_ sender: Any) {
-        viewModel.registerUser(user: AuthenticationModel(email: usernameField.text ?? "",
-                                                         password: passwordField.text ?? ""))
-    }
-    
-    func initialSetup(){
+    private func initialSetup(){
         self.title = "Register"
         self.passwordField.isSecureTextEntry = true
-        viewModel.$statusMessageRegistration.sink(receiveValue: { message in
-            if !message.isEmpty{
-                DispatchQueue.main.async {
-                    self.showAlertView(message: message)
-                    self.usernameField.text = nil
-                    self.passwordField.text = nil
-                }
-            }
-        }).store(in: &cancellables)
+        bindViewModel()
+    }
+    
+    private func bindViewModel(){
+        viewModel.statusMessageRegistration
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: { [weak self] message in
+                self?.showAlertView(message: message)
+                self?.clearTextFields()
+            }).store(in: &cancellables)
+    }
+    
+    private func clearTextFields(){
+        self.usernameField.text = nil
+        self.passwordField.text = nil
+    }
+    
+    @IBAction private func registerUser(_ sender: Any) {
+        let userName = usernameField.text ?? ""
+        let password = passwordField.text ?? ""
+        let user = AuthenticationModel(email: userName, password: password)
+        viewModel.registerUser(user:user)
     }
 }

@@ -12,7 +12,7 @@ class MockAPIManager: APIManager{
     }
 }
 
-final class LoginViewModelTests: XCTestCase {
+final class LoginViewModelTests: XCTestCase{
 
     
     var viewModel: LoginViewModel!
@@ -40,7 +40,7 @@ final class LoginViewModelTests: XCTestCase {
         mockAPIManager.mockResponseModel = ResponseModel(status: 200, error: nil)
         
         let expectation = XCTestExpectation(description: "Login Success")
-        viewModel.$isAuthenticationSuccess.sink { isSuccess in
+        viewModel.isAuthenticationSuccess.sink { isSuccess in
             if isSuccess{
                 expectation.fulfill()
             }

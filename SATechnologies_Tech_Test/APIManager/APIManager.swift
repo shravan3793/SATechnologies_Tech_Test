@@ -1,9 +1,9 @@
 import Foundation
-
+import Combine
 class APIManager{
     
     public static var shared = APIManager()
-    @Published var responseModel : ResponseModel? =  ResponseModel(status: 0, error: nil)
+    var responseModel = PassthroughSubject<ResponseModel?,Never>()
 
     func request<T:Encodable>(endPoint:EndPoint,userInput:T = EmptyInput()) async throws{
         let baseURL = "http://localhost:5001"

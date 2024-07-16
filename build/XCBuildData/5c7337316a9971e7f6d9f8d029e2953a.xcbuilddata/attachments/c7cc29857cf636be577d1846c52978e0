@@ -1,0 +1,140 @@
+{
+  "" : {
+    "const-values" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/SATechnologies_Tech_Test-master.swiftconstvalues",
+    "dependencies" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/SATechnologies_Tech_Test-master.d",
+    "diagnostics" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/SATechnologies_Tech_Test-master.dia",
+    "emit-module-dependencies" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/SATechnologies_Tech_Test-master-emit-module.d",
+    "emit-module-diagnostics" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/SATechnologies_Tech_Test-master-emit-module.dia",
+    "swift-dependencies" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/SATechnologies_Tech_Test-master.swiftdeps"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/APIManager/APIManager + EndPoints.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/APIManager + EndPoints.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/APIManager + EndPoints.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/APIManager + EndPoints.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/APIManager/APIManager + Parser.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/APIManager + Parser.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/APIManager + Parser.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/APIManager + Parser.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/APIManager/APIManager.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/APIManager.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/APIManager.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/APIManager.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/App and Scene Delegates/AppDelegate.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/AppDelegate.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/App and Scene Delegates/SceneDelegate.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/SceneDelegate.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/SceneDelegate.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/SceneDelegate.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/History/HistoryTableViewCell.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/HistoryTableViewCell.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/HistoryTableViewCell.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/HistoryTableViewCell.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/History/HistoryVC.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/HistoryVC.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/HistoryVC.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/HistoryVC.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/History/HistoryVC+UITableViewDataSource.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/HistoryVC+UITableViewDataSource.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/HistoryVC+UITableViewDataSource.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/HistoryVC+UITableViewDataSource.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/History/HistoryViewModel.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/HistoryViewModel.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/HistoryViewModel.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/HistoryViewModel.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Inspection Questions and Answers/Inspection_QnA_VC.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/Inspection_QnA_VC.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/Inspection_QnA_VC.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/Inspection_QnA_VC.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Inspection Questions and Answers/Inspection_QnA_ViewModel + DataSync.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/Inspection_QnA_ViewModel + DataSync.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/Inspection_QnA_ViewModel + DataSync.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/Inspection_QnA_ViewModel + DataSync.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Inspection Questions and Answers/Inspection_QnA_ViewModel.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/Inspection_QnA_ViewModel.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/Inspection_QnA_ViewModel.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/Inspection_QnA_ViewModel.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Inspection Questions and Answers/Inspection_QnA+UITableView.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/Inspection_QnA+UITableView.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/Inspection_QnA+UITableView.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/Inspection_QnA+UITableView.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Inspection/InspectionVC.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/InspectionVC.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/InspectionVC.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/InspectionVC.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Inspection/InspectionVC+UITableViewDataSource.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/InspectionVC+UITableViewDataSource.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/InspectionVC+UITableViewDataSource.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/InspectionVC+UITableViewDataSource.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Inspection/InspectionViewModel.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/InspectionViewModel.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/InspectionViewModel.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/InspectionViewModel.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Login/LoginViewController.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/LoginViewController.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/LoginViewController.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/LoginViewController.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Login/LoginViewModel.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/LoginViewModel.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/LoginViewModel.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/LoginViewModel.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Register/RegisterVC.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/RegisterVC.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/RegisterVC.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/RegisterVC.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Register/RegisterViewModel.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/RegisterViewModel.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/RegisterViewModel.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/RegisterViewModel.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Models/AuthenticationModel.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/AuthenticationModel.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/AuthenticationModel.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/AuthenticationModel.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Models/DataManager.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/DataManager.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/DataManager.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/DataManager.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Models/InspectionModel + MockResponseData.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/InspectionModel + MockResponseData.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/InspectionModel + MockResponseData.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/InspectionModel + MockResponseData.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Models/InspectionModel.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/InspectionModel.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/InspectionModel.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/InspectionModel.o"
+  },
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Utilities/UIViewController + Extensions.swift" : {
+    "index-unit-output-path" : "/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/UIViewController + Extensions.o",
+    "llvm-bc" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/UIViewController + Extensions.bc",
+    "object" : "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/Objects-normal/arm64/UIViewController + Extensions.o"
+  }
+}

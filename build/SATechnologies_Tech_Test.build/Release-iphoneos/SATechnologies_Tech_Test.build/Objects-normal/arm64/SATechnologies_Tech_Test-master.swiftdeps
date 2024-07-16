@@ -1,0 +1,45 @@
+version: "Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)"
+options: "d99cbc9b2894ae11a2d34ec2826e4f88431cc1934fb991f2a6e6c7f0ce8e14bd"
+build_start_time: [1721127908, 459924000]
+build_end_time: [1721127910, 190459000]
+inputs:
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/APIManager/APIManager + EndPoints.swift": !dirty [1720705598, 480966934]
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/APIManager/APIManager + Parser.swift": !dirty [1720691963, 389052637]
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/APIManager/APIManager.swift": !dirty [1720776541, 516015257]
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/App and Scene Delegates/AppDelegate.swift": !dirty [1720776541, 516492177]
+  ? "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/App and Scene Delegates/SceneDelegate.swift"
+  : !dirty [1720691963, 389947185]
+  ? "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/History/HistoryTableViewCell.swift"
+  : !dirty [1720705598, 481417392]
+  ? "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/History/HistoryVC+UITableViewDataSource.swift"
+  : !dirty [1720776541, 517070431]
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/History/HistoryVC.swift": !dirty [1720776541, 517533393]
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/History/HistoryViewModel.swift": !dirty [1720705598, 482248640]
+  ? "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Inspection Questions and Answers/Inspection_QnA+UITableView.swift"
+  : !dirty [1720524394, 773824226]
+  ? "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Inspection Questions and Answers/Inspection_QnA_VC.swift"
+  : !dirty [1720705598, 482654890]
+  ? "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Inspection Questions and Answers/Inspection_QnA_ViewModel + DataSync.swift"
+  : !dirty [1720776541, 517865813]
+  ? "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Inspection Questions and Answers/Inspection_QnA_ViewModel.swift"
+  : !dirty [1720705598, 483205972]
+  ? "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Inspection/InspectionVC+UITableViewDataSource.swift"
+  : !dirty [1720513965, 146782073]
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Inspection/InspectionVC.swift": !dirty [1720705598, 483685763]
+  ? "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Inspection/InspectionViewModel.swift"
+  : !dirty [1720705598, 484101512]
+  ? "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Login/LoginViewController.swift"
+  : !dirty [1721124347, 939706838]
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Login/LoginViewModel.swift": !dirty [1721125391, 255203733]
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Register/RegisterVC.swift": !dirty [1720776541, 518890904]
+  ? "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Register/RegisterViewModel.swift"
+  : !dirty [1720858201, 626174698]
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Models/AuthenticationModel.swift": !dirty [1720520373, 946263570]
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Models/DataManager.swift": !dirty [1720526206, 290679953]
+  ? "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Models/InspectionModel + MockResponseData.swift"
+  : !dirty [1720776541, 519426741]
+  "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Models/InspectionModel.swift": !dirty [1720521573, 817410117]
+  ? "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Utilities/UIViewController + Extensions.swift"
+  : !dirty [1720776541, 520290581]
+  ? "/Volumes/Data Drive/iOS Development/SATechnologies_Tech_Test/build/SATechnologies_Tech_Test.build/Release-iphoneos/SATechnologies_Tech_Test.build/DerivedSources/GeneratedAssetSymbols.swift"
+  : !dirty [1721127908, 370086842]

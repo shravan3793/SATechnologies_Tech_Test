@@ -1,44 +1,63 @@
-
 import Foundation
 import Combine
 
-enum LoginStatus: String{
-    case success = "Login was successful (the user was previously registered with the /api/register endpoint)"
-    case missingFields = "email or password fields are missing from the JSON"
-    case invalidCrendetials = "if the user does not exist or the credentials are incorrect"
+/// Enum representing different login statuses.
+enum LoginStatus: String {
+    /// Unknown error message.
     case unknownError = "Unknown Error"
 }
 
-
-class LoginViewModel{
+/// ViewModel responsible for handling login logic.
+class LoginViewModel {
     
-    @Published var isAuthenticationSuccess = false
+    /// Publishes a boolean indicating whether authentication was successful.
+    var isAuthenticationSuccess = PassthroughSubject<Bool, Never>()
     
-    @Published var statusMessage = String()
-    var cancellables = Set<AnyCancellable>()
-    init(){}
+    /// Publishes status messages from the login process.
+    var statusMessage = PassthroughSubject<String?, Never>()
     
-    func callLoginApi(user:AuthenticationModel){
-        Task{
+    /// Stores Combine cancellables.
+    private var cancellables = Set<AnyCancellable>()
+    
+    /// Initializes the LoginViewModel and sets up bindings.
+    init() {
+        setupBindings()
+    }
+    
+    /// Sets up bindings to listen for changes in the API response model.
+    private func setupBindings() {
+        APIManager.shared.responseModel
+            .receive(on: DispatchQueue.main) // Ensure updates are received on the main thread
+            .sink { [weak self] response in
+                guard let self = self, let response = response else { return }
+                self.handleResponseModel(response)
+            }
+            .store(in: &cancellables)
+    }
+    
+    /// Calls the login API with the provided user credentials.
+    /// - Parameter user: The user's authentication model containing login credentials.
+    func callLoginApi(user: AuthenticationModel) {
+        Task {
             do {
                 try await APIManager.shared.request(endPoint: .login, userInput: user)
-                APIManager.shared.$responseModel.sink { response in
-                    guard let status = response?.status else {return}
-                    switch status{
-                    case 200:
-                        self.isAuthenticationSuccess = true
-                    case 400:
-                        self.statusMessage = response?.error ?? LoginStatus.missingFields.rawValue
-                    case 401:
-                        self.statusMessage = response?.error ?? LoginStatus.invalidCrendetials.rawValue
-                    default:
-                        self.statusMessage = LoginStatus.unknownError.rawValue
-                    }
-                }.store(in: &cancellables)
-            }catch{
-                print(error)
+            } catch {
+                self.statusMessage.send(LoginStatus.unknownError.rawValue)
             }
-            
+        }
+    }
+    
+    /// Handles the API response model and updates the appropriate publishers.
+    /// - Parameter response: The response model from the API call.
+    private func handleResponseModel(_ response: ResponseModel?) {
+        guard let status = response?.status else { return }
+        switch status {
+        case 200:
+            self.isAuthenticationSuccess.send(true)
+        case 400, 401:
+            self.statusMessage.send(response?.error)
+        default:
+            self.statusMessage.send(LoginStatus.unknownError.rawValue)
         }
     }
 }
