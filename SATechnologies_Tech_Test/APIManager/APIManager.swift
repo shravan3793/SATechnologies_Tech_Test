@@ -1,13 +1,25 @@
 import Foundation
 import Combine
+
+protocol URLSessionProtocol {
+    func data(for request: URLRequest) async throws -> (Data, URLResponse)
+}
+
+extension URLSession: URLSessionProtocol{}
+
 class APIManager{
     
     public static var shared = APIManager()
     var responseModel = PassthroughSubject<ResponseModel?,Never>()
+    var urlSession: URLSessionProtocol
+    
+    init(urlSession: URLSessionProtocol = URLSession.shared){
+        self.urlSession = urlSession
+    }
 
     func request<T:Encodable>(endPoint:EndPoint,userInput:T = EmptyInput()) async throws{
-        let baseURL = "http://localhost:5001"
-        guard let url = URL(string: baseURL + endPoint.rawValue) else {
+
+        guard let url = endPoint.url()  else {
             throw APIError.invalidUrl
         }
         
@@ -22,13 +34,7 @@ class APIManager{
         request.httpMethod = endPoint.getHTTPMethod().rawValue
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        let (data,response) = try await URLSession.shared.data(for: request)
+        let (data,response) = try await urlSession.data(for: request)
         try parseResponse(data: data, response: response,endPoint: endPoint)
-        
     }
-
 }
-
-
-
-

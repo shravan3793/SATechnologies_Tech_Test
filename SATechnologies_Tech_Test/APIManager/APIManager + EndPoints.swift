@@ -1,5 +1,7 @@
 import Foundation
 
+private let baseURL = "http://localhost:5001"
+
 enum EndPoint: String{
     case register = "/api/register"
     case login = "/api/login"
@@ -16,6 +18,10 @@ enum EndPoint: String{
                 .randomInspection:
             return .get
         }
+    }
+    
+    func url() -> URL?{
+        URL(string: baseURL + self.rawValue)
     }
 }
 

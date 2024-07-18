@@ -32,8 +32,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
             endingLineNumber = "36"
-            landmarkName = "testRegistrationSuccess()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -50,6 +50,50 @@
             endingLineNumber = "44"
             landmarkName = "registerUser(user:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9167F231-F04D-4C74-8259-597C8A0788FC - d3a38136296f0667"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in SATechnologies_Tech_Test.RegisterViewModel.registerUser(user: SATechnologies_Tech_Test.AuthenticationModel) -&gt; ()"
+                  moduleName = "SATechnologies_Tech_Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Data%20Drive/iOS%20Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Register/RegisterViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45">
+               </Location>
+               <Location
+                  uuid = "9167F231-F04D-4C74-8259-597C8A0788FC - 944412701d8e3306"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in SATechnologies_Tech_Test.RegisterViewModel.registerUser(user: SATechnologies_Tech_Test.AuthenticationModel) -&gt; ()"
+                  moduleName = "SATechnologies_Tech_Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Data%20Drive/iOS%20Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Register/RegisterViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45">
+               </Location>
+               <Location
+                  uuid = "9167F231-F04D-4C74-8259-597C8A0788FC - 25d88cffc998e1b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in SATechnologies_Tech_Test.RegisterViewModel.registerUser(user: SATechnologies_Tech_Test.AuthenticationModel) -&gt; ()"
+                  moduleName = "SATechnologies_Tech_Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Data%20Drive/iOS%20Development/SATechnologies_Tech_Test/SATechnologies_Tech_Test/Controllers/Register/RegisterViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
