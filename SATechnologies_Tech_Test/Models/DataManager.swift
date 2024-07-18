@@ -1,13 +1,17 @@
 import Combine
 import Foundation
+
+enum DataManagerError: Error{
+    case documentDirectoryNotFound
+}
 class DataManager{
-    static let shared = DataManager()
+    static var shared = DataManager()
     
     private init(){}
     
     @Published var inspectionData:Inspection?
     
-    private func getFileURL() throws -> URL{
+     func getFileURL() throws -> URL{
         guard let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else{
             throw NSError(domain: "FileError", code: 1, userInfo: [NSLocalizedDescriptionKey: "Document directory not found."])
         }
@@ -43,7 +47,7 @@ class DataManager{
         }
     }
     
-    func updateCategoryData(category:Category?){
+    func updateCategoryData(category:InspectionCategory?){
         guard let category = category,
               let index = inspectionData?.inspection.survey.categories.firstIndex(where: { item in
                   return item.id == category.id

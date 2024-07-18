@@ -7,7 +7,7 @@ struct AuthenticationModel:Codable{
 }
 
 // Response Model (also being used to handle Error response)
-struct ResponseModel: Decodable{
+struct ResponseModel: Codable{
     var status: Int?
     var error:String?
     

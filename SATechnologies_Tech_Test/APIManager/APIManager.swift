@@ -5,9 +5,17 @@ protocol URLSessionProtocol {
     func data(for request: URLRequest) async throws -> (Data, URLResponse)
 }
 
-extension URLSession: URLSessionProtocol{}
+extension URLSession: URLSessionProtocol{
+    func data(for request: URLRequest) async throws -> (Data, URLResponse){
+        try await data(for: request, delegate: nil)
+    }
+}
 
-class APIManager{
+protocol APIManagerProtocol{
+    func request<T:Encodable>(endPoint:EndPoint,userInput:T) async throws
+}
+
+class APIManager:APIManagerProtocol {
     
     public static var shared = APIManager()
     var responseModel = PassthroughSubject<ResponseModel?,Never>()

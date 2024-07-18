@@ -5,7 +5,7 @@ extension HistoryVC:UITableViewDataSource,UITableViewDelegate{
         return historyViewModel.inspectionData
     }
     
-    var categories : [Category]?{
+    var categories : [InspectionCategory]?{
         data?.survey.categories
     }
     
@@ -53,7 +53,7 @@ extension HistoryVC:UITableViewDataSource,UITableViewDelegate{
         }
     }
     
-    func getCurrentQuestion(forCategory category:Category,indexPath:IndexPath) -> Question{
+    func getCurrentQuestion(forCategory category:InspectionCategory,indexPath:IndexPath) -> Question{
         category.questions[indexPath.row/2]
     }
     func getSelectedAnswer(question:Question) -> String{

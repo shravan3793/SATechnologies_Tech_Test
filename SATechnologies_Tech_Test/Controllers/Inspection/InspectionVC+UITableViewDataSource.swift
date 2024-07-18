@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 extension InspectionVC : UITableViewDataSource{
     
-    var categories : [Category]?  {
+    var categories : [InspectionCategory]?  {
         return data?.survey.categories
     }
     
@@ -36,7 +36,7 @@ extension InspectionVC : UITableViewDelegate{
     }
     
     
-    func loadCategoryWiseQuestions(category:Category){
+    func loadCategoryWiseQuestions(category:InspectionCategory){
         DispatchQueue.main.async {
             let storyboard = UIStoryboard(name: "InspectionStoryboard", bundle: nil)
             guard let vc = storyboard.instantiateViewController(withIdentifier: "Inspection_QnA_VC") as? Inspection_QnA_VC else {return}

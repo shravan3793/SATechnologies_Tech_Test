@@ -5,7 +5,7 @@ class Inspection_QnA_VC: UIViewController {
     var cancellables = Set<AnyCancellable>()
     @IBOutlet weak var questionsTable: UITableView!
     var inspectionQnAViewModel = Inspection_QnA_ViewModel()
-    var category : Category?{
+    var category : InspectionCategory?{
         didSet{
             self.reloadTableView()
         }

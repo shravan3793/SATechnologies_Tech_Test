@@ -9,7 +9,7 @@ class Inspection_QnA_ViewModel{
         setupBinding()
     }
     
-    private func setupBinding(){
+     func setupBinding(){
         APIManager.shared.responseModel.sink { [weak self] response in
             self?.handleResponse(response: response)
         }.store(in: &cancellables)
@@ -32,7 +32,7 @@ class Inspection_QnA_ViewModel{
     }
     
     
-    func updateCategory(category:Category?){
+    func updateCategory(category:InspectionCategory?){
         DataManager.shared.updateCategoryData(category: category)
     }
     

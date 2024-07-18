@@ -36,7 +36,7 @@ class Question: Codable {
 }
 
 // Category Model
-class Category: Codable {
+class InspectionCategory: Codable {
     let id: Int
     let name: String
     var questions: [Question]
@@ -51,7 +51,7 @@ class Category: Codable {
 // Survey Model
 class Survey: Codable {
     let id: Int
-    var categories: [Category]
+    var categories: [InspectionCategory]
 }
 
 // Inspection  Model

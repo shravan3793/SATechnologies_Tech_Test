@@ -20,8 +20,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9D3389782C412875002B13D6"
-               BuildableName = "SATechnologies_Tech_TestUITests.xctest"
-               BlueprintName = "SATechnologies_Tech_TestUITests"
+               BuildableName = "SATechnologies_Tech_Test_Unit_Tests.xctest"
+               BlueprintName = "SATechnologies_Tech_Test_Unit_Tests"
                ReferencedContainer = "container:SATechnologies_Tech_Test.xcodeproj">
             </BuildableReference>
          </TestableReference>
