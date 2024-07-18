@@ -11,7 +11,6 @@ class RegisterViewModel{
     
     var statusMessageRegistration = PassthroughSubject<String, Never>()
     private var cancellables = Set<AnyCancellable>()
-    var isRegistered = PassthroughSubject<Bool, Never>()
     
     init(){
         setupBindings()
@@ -28,7 +27,6 @@ class RegisterViewModel{
         guard let status = response.status else {return}
         switch status{
         case 200:
-            self.isRegistered.send(true)
             self.statusMessageRegistration.send(RegistrationStatus.success.rawValue)
         case 400:
             self.statusMessageRegistration.send(response.error ?? RegistrationStatus.unSuccessful.rawValue)
