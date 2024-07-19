@@ -6,11 +6,15 @@ class LoginViewController: UIViewController {
     private let viewModel = LoginViewModel()
     private var cancellables = Set<AnyCancellable>()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         initialSetup()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        cancellables.forEach{$0.cancel()}
+    }
     private func initialSetup(){
         passwordField.isSecureTextEntry = true
        
